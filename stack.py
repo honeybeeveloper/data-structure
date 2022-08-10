@@ -47,14 +47,3 @@ class StackLinkedList(object):
             deleted = self.head.value
             self.head = self.head.next
         return deleted
-
-
-if __name__ == '__main__':
-    stack = StackLinkedList()
-    stack.pop()
-    stack.push('a')
-    stack.push('b')
-    stack.pop()
-    stack.push('d')
-    stack.pop()
-    stack.push('c')

@@ -57,20 +57,3 @@ class LinkedList(object):
         for i in iterator:
             print_str += f'{i} | '
         print(print_str)
-
-
-if __name__ == '__main__':
-    linked_list = LinkedList()
-    linked_list.append(1)
-    linked_list.append(5)
-    linked_list.append(2)
-    linked_list.append(4)
-    linked_list.append(3)
-    linked_list.append(5)
-    linked_list.__str__()
-
-    linked_list.delete(5)
-    linked_list.delete(1)
-    linked_list.delete(3)
-    linked_list.delete(5)
-    linked_list.__str__()
