@@ -47,7 +47,7 @@ class BinaryTree(object):
             if node.left and node.right:
                 parent, child = node, node.right
                 while child.left is not None:
-                    parent, child = child, child.right
+                    parent, child = child, child.left
                 child.left = node.left
                 if parent != node:
                     parent.left = child.right
